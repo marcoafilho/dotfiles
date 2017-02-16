@@ -1,0 +1,49 @@
+# Use this path to store sensitive data like git's credentials.
+[include]
+  path = ~/.gitconfig.local
+
+[color]
+	ui = always
+
+[alias]
+	a = add
+	b = branch
+	c = commit
+	cb = rev-parse --abbrev-ref HEAD
+	cl = !(git branch --merged master | grep -v master | xargs git branch -d)
+	co = checkout
+	d = diff
+
+	# Logs
+	l = log
+	ln = log -n
+
+	p = push
+	pl = pull
+	pr = pull-request
+	s = status
+
+[core]
+	editor = vim
+	quotepath = false
+	precomposeunicode = true
+	autocrlf = input
+
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+
+[push]
+	followTags = true
+	default = current
