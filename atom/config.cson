@@ -1,0 +1,27 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "349cbef6-1eba-417b-84f1-512774545ea8"
+  core:
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "node_modules"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "railscasts-syntax"
+    ]
+  editor:
+    fontSize: 16
+  "exception-reporting":
+    userId: "7fa10c84-9bd5-36f7-5301-ff8d736b2048"
+  "tree-view":
+    hideVcsIgnoredFiles: false
+  welcome:
+    showOnStartup: false
